@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="screen">
+            <input type="text" name="screen" placeholder="0" id="screen" />
+          </div>
+          <div>
+            <input class="opp" type="button" value="AC" onclick="AC()" />
+            <input class="opp" type="button" value="DE" onclick="del()" />
+            <input class="op" type="button" value="%" />
+            <input class="op" type="button" value="/" />
+          </div>
+          <div>
+            <input class="num" type="button" value="7" />
+            <input class="num" type="button" value="8" />
+            <input class="num" type="button" value="9" />
+            <input class="op" type="button" value="*" />
+          </div>
+          <div>
+            <input class="num" type="button" value="4" />
+            <input class="num" type="button" value="5" />
+            <input class="num" type="button" value="6" />
+            <input class="op" type="button" value="+" />
+          </div>
+          <div>
+            <input class="num" type="button" value="1" />
+            <input class="num" type="button" value="2" />
+            <input class="num" type="button" value="3" />
+            <input class="op" type="button" value="-" />
+          </div>
+          <div>
+            <input class="num" type="button" value="0" />
+            <input class="dot" type="button" value="." />
+            <input type="button" value="=" class="equal" onclick="calc()" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

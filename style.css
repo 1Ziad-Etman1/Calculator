@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(2, 24, 47, 0.968627451);
+}
+
+.calculator {
+  background-color: #5e242e;
+  padding: 20px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6), -2px -2px 15px rgba(211, 211, 211, 0.2);
+          box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6), -2px -2px 15px rgba(211, 211, 211, 0.2);
+}
+.calculator form div input {
+  color: rgba(255, 255, 255, 0.548);
+  background-color: rgba(125, 125, 125, 0.6745098039);
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 5px 3.5px;
+  font-size: 20px;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3), -2px -2px 8px rgba(211, 211, 211, 0.3);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3), -2px -2px 8px rgba(211, 211, 211, 0.3);
+  border-radius: 24px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.calculator form div input:hover {
+  background-color: rgba(94, 94, 94, 0.6745098039);
+}
+.calculator form div .op {
+  background-color: #152e4b;
+  -webkit-box-shadow: -0.5px -0.5px 8px rgba(255, 255, 255, 0.3);
+          box-shadow: -0.5px -0.5px 8px rgba(255, 255, 255, 0.3);
+}
+.calculator form div .opp {
+  background-color: #541616;
+  -webkit-box-shadow: -0.5px -0.5px 8px rgba(255, 255, 255, 0.3);
+          box-shadow: -0.5px -0.5px 8px rgba(255, 255, 255, 0.3);
+}
+.calculator form div .equal {
+  width: 131px;
+  background-color: #152e4b;
+}
+.calculator form .screen input {
+  width: 274px;
+  height: 70px;
+  background-color: rgba(72, 28, 36, 0.831372549);
+  border: none;
+  border-radius: 12px;
+  font-size: 28px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: right;
+  padding: 15px;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0);
+}
+.calculator form .screen input:hover {
+  background-color: rgba(72, 28, 36, 0.6431372549);
+}
+.calculator form .screen input:focus {
+  outline: none;
+}
